@@ -1,0 +1,53 @@
+:root {
+  --purple: #302b7e;
+  --grey: #333333;
+  --blue-accent: #57c0e9;
+  --red-accent: #d0208c;
+}
+
+/* navigation */
+.navbar {
+  background-color: var(--purple);
+}
+
+.navbar-brand {
+  color: var(--blue-accent);
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  /* overriding BS default styles */
+  color: var(--blue-accent);
+}
+
+.navbar-toggler {
+  color: var(--blue-accent);
+}
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  transition: all 0.3s ease;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px 38px;
+  border-radius: 3px;
+  border-color: var(--red-accent);
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: var(--red-accent);
+}
+
+span{
+  background-color: var(--blue-accent);
+}
+
+/* main */
+#area, #area-1{
+  height: 5rem;
+}

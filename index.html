@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sumerge Assignment 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: "Titillium Web";
+        font-weight: 100;
+        font-style: normal;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand pt-0 d-flex" href="#">
+          <img src="./assets/white-e1548083394751.png.webp" alt="logo" />
+          <h3 class="ms-1 mb-0">Assignment 2</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fi fi-rr-menu-burger"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Tutorial
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FIRST ATTEMPT -->
+    <main class="mt-5">
+      <h1 class="text-center main-title">Words Counter!</h1>
+      <p class="text-center">Attempt without a button, couldn't make the cursor work right</p>
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <div class="form-control mb-3" id="area" contenteditable="true"></div>
+            <input type="number" class="form-control w-25 mx-auto" id="counter" readonly">
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- SECOND ATTEMPT -->
+    <main class="mt-5 mb-5">
+      <h1 class="text-center main-title">Words Counter!</h1>
+      <p class="text-center">Attempt with a button</p>
+      <div class="container">
+        <form class="d-flex flex-column">
+          <div class="form-group">
+            <div class="form-control mb-3" id="area-1" contenteditable="true"></div>
+            <input type="number" class="form-control w-25 mx-auto" id="counter-1" readonly">
+          </div>
+          <button
+          type="button"
+          class="btn text-dark mx-auto mt-3"
+          onclick="count()"
+        >
+          COUNT! 
+        </button>
+        </form>
+      </div>
+    </main>
+
+
+    <!-- Tutorial Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Game Tutorial</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Click start game, then find the unpaired flower!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

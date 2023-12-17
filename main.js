@@ -46,7 +46,7 @@ function count(){
 function highlightWord1(longestWord, currentText){
   const stringArray = currentText.trim().split(/\s+/g);
   text1.innerHTML = currentText.replace(longestWord, `<span>${longestWord}</span>`);
-  if(longestWord==stringArray[stringArray.length-1]){
+  if(longestWord === stringArray[stringArray.length-1]){
     text1.innerHTML+="&nbsp;";
 }
 }
